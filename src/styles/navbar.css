@@ -34,7 +34,7 @@
 }
 
 .logo {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 .navbar {
   display: none;
@@ -43,7 +43,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  font-size: 14px;
+  font-size: 15px;
   list-style: none;
 }
 
@@ -58,13 +58,14 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 10px;
+    padding: 5px;
     box-shadow: 0 5px 5px #eeeeee;
   }
   .hamburger-menu {
     display: none;
   }
   .regular-menu {
+    display: flex;
     background-color: #fff;
     width: 100%;
     justify-content: space-around;
@@ -77,10 +78,21 @@
   .logo {
     margin-right: 20px;
     margin-bottom: 0;
+    width: 20%;
   }
 
   .navbar {
+    display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    font-size: 15px;
+    list-style: none;
+
+  }
+  .navbar a {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
   }
 }
 
