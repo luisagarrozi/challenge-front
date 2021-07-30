@@ -1,4 +1,4 @@
-![Tela](https://www.agenciaeplus.com.br/wp-content/themes/eplus/images/agencia-eplus-n-logo.png)
+![Tela](https://github.com/luisagarrozi/challenge-front/blob/master/tela.png?raw=true)
 
 # E-Plus Frontend Challenge
 
