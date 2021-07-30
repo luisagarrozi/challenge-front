@@ -5,22 +5,33 @@
 .cart {
   position: absolute;
   display: none;
-  top: 90px;
-  right: 20px;
+  top: 120px;
+  right: 38px;
   background-color: #f0f0f0;
-  width: 300px;
-  min-height: 200px;
+  width: 340px;
+  min-height: 300px;
   padding-left: 15px;
 }
+
+.itens::-webkit-scrollbar {
+  display: block;
+  width: 0.6em;
+  height: 1em;
+  overflow: auto;
+  background-color: #d1d1d1;
+}
+.itens::-webkit-scrollbar-thumb {
+  background-color: rgb(114, 114, 114);
+}
+
 .itens {
-  max-height: 300px;
+  max-height: 350px;
   overflow-y: scroll;
 }
 .item-cart {
   padding-top: 20px;
   position: relative;
   display: flex;
-  
 }
 .itens a {
   display: flex;
@@ -30,20 +41,19 @@
 .item-image {
   padding: 10px;
   text-align: center;
-  width: 40%;
+  width: 30%;
   height: 30%;
 }
 
 .item-info {
   display: flex;
   flex-direction: column;
-  font-size: 12px;
+  font-size: 1.1em;
 }
 .item-name span {
   display: block;
   max-width: 100%;
   overflow: hidden;
-
 }
 
 .caixa-price-qtd {
@@ -52,15 +62,30 @@
 .item-qtd {
   float: left;
   color: #333;
-  font-weight: 500;
+  font-weight: bold;
+  font-size: 1.1em;
 }
 
 .item-price {
   float: right;
   color: #00bb16;
-  font-weight: bold;
+  font-weight: 900;
+  font-size: 1em;
+}
+.itens-total {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333333;
+  padding: 10px;
+  background-color: #e5e5e5;
+  font-size: 1.2em;
 }
 
+.itens-value {
+  font-weight: 900;
+}
 .item-cart::before {
   content: "";
   position: absolute;
@@ -72,44 +97,49 @@
   right: 5%;
 }
 
-.total-itens {
-  height: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #333333;
-  padding: 10px;
-  background-color: #e5e5e5;
-}
-
-button.btn-finalizar {
+button.checkout {
   border: 0;
   height: 60px;
   text-align: center;
   width: 100%;
   color: #fff;
   background-color: #00bb16;
-  font-weight: bold;
+  font-weight: bolder;
   outline: none;
+  font-size: 1.2em;
 }
 
-@media only screen and(min-width: 320px) and (max-width: 500px) {
+@media only screen and (min-width: 700px) {
   .cart {
-    max-width: 300px;
-    right: 0px;
-    top: 95px;
+    position: absolute;
+    display: none;
+    top: 78px;
+    right: 38px;
+    background-color: #f0f0f0;
+    width: 310px;
+    min-height: 300px;
+    padding-left: 10px;
   }
-
   .cart::before {
     content: "";
     display: block;
     position: absolute;
-    top: -10px;
-    right: 70px;
+    top: -15px;
+    right: 22px;
     width: 0px;
     height: 0px;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-bottom: 10px solid #f0f0f0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid #f0f0f0;
   }
+
+  .item-info {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+  }
+
+  .itens-total {
+    font-size: 1em;}
+
 }

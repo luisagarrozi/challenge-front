@@ -6,7 +6,7 @@
   cursor: pointer;
   padding: 0;
   border: none;
-  top: 18px;
+  top: 38px;
   left: 10px;
   width: 40px;
   height: 26px;
@@ -21,19 +21,23 @@
   background: #303030;
 }
 
-.regular-menu {
+.header {
   display: flex;
   flex-direction: column;
   align-items: center;
   position: absolute;
   box-shadow: none;
-  justify-content: space-evenly;
+  justify-content: center;
   background-color: transparent;
   background: #fff;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
 }
 
 .logo {
-  margin-bottom: 30px;
+  margin-top: 18px;
+  margin-left: 30px;
 }
 .navbar {
   display: none;
@@ -42,8 +46,9 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  font-size: 15px;
+  font-size: 1.3em;
   list-style: none;
+  float: left;
 }
 
 .navbar a {
@@ -58,13 +63,17 @@
   justify-content: space-evenly;
   align-items: center;
 }
-@media (min-width: 998px) {
+.material-icons.md-36 {
+  font-size: 32px;
+}
+
+@media (min-width: 700px) {
   .header {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    padding: 5px;
+    justify-content: space-between;
     box-shadow: 0 5px 5px #eeeeee;
+    height: 12.5%;
   }
   .hamburger-menu {
     display: none;
@@ -73,26 +82,28 @@
     display: flex;
     background-color: #fff;
     width: 100%;
-    justify-content: space-evenly;
+    justify-content: space-between;
     padding: 0;
     flex-direction: row;
     position: static;
     align-items: center;
+    margin-top: 10px;
   }
 
   .logo {
-    margin-right: 20px;
+    margin-right: 5px;
     margin-bottom: 0;
-    width: 20%;
+    width: 19%;
+    margin-top: 5px;
   }
 
   .navbar {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     font-size: 15px;
     list-style: none;
-    width: 60%;
+    width: 44%;
   }
   .navbar a {
     color: #000;
@@ -100,19 +111,11 @@
     cursor: pointer;
   }
   .icons {
-    width: 20%;
+    width: 24%;
   }
 
   .material-icons {
     font-size: 40px;
     cursor: pointer;
-  }
-}
-
-@media (min-width: 1280px) {
-  .header {
-    max-width: 1280px;
-    position: relative;
-    margin: 0 auto;
   }
 }
