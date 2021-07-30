@@ -110,6 +110,9 @@
     text-decoration: none;
     cursor: pointer;
   }
+  .navbar a:hover {
+    color: #00bb16;
+  }
   .icons {
     width: 24%;
   }
@@ -117,5 +120,8 @@
   .material-icons {
     font-size: 40px;
     cursor: pointer;
+  }
+  .material-icons:hover {
+    color: #00bb16;
   }
 }

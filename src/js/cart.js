@@ -73,7 +73,7 @@ json.cart.item.forEach(product => {
 // Calculadora do valor total
 let $amount = document.querySelector('.itens-value');
 
-const calculatePriceTotal = (price) => {
+const calculateTotal = (price) => {
   let priceConvert = price / 100
   $amount.innerHTML = `R$ ${priceConvert.toLocaleString('pt-BR')}`;
 }
@@ -83,5 +83,5 @@ for(item of json.cart.item){
   count += item.bestPrice;
 } 
 
-calculatePriceTotal(count)
+calculateTotal(count)
 
