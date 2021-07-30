@@ -1,0 +1,113 @@
+.cart-active {
+  display: block;
+}
+
+.cart {
+  position: absolute;
+  display: none;
+  top: 90px;
+  right: 20px;
+  background-color: #f0f0f0;
+  width: 400px;
+  min-height: 200px;
+  padding: 20px 0 0;
+}
+.itens {
+  max-height: 300px;
+  overflow-y: scroll;
+}
+.item-cart {
+  position: relative;
+}
+.itens a {
+  display: flex;
+  align-items: center;
+  color: initial;
+}
+.cart-images {
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+}
+.cart-images img {
+  width: 90%;
+}
+
+.item-info {
+  display: flex;
+  flex-direction: column;
+}
+.item-name span {
+  display: block;
+  max-width: 100%;
+  height: 45px;
+  overflow: hidden;
+}
+
+.caixa-price-qtd {
+  width: 80%;
+}
+.item-qtd {
+  float: left;
+  color: #333;
+  font-weight: 500;
+}
+
+.item-price {
+  float: right;
+  color: #00bb16;
+  font-weight: bold;
+}
+
+.item-cart::before {
+  content: "";
+  position: absolute;
+  width: 90%;
+  height: 1px;
+  background-color: #e5e5e5;
+  bottom: 0;
+  left: 5%;
+  right: 5%;
+}
+
+.total-itens {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333333;
+  padding: 10px;
+  background-color: #e5e5e5;
+}
+
+button.btn-finalizar {
+  border: 0;
+  height: 60px;
+  text-align: center;
+  width: 100%;
+  color: #fff;
+  background-color: #00bb16;
+  font-weight: bold;
+  outline: none;
+}
+
+@media only screen and(min-width: 320px) and (max-width: 500px) {
+  .cart {
+    max-width: 300px;
+    right: 0px;
+    top: 95px;
+  }
+
+  .cart::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -10px;
+    right: 70px;
+    width: 0px;
+    height: 0px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #f0f0f0;
+  }
+}
