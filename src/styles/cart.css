@@ -1,4 +1,4 @@
-.cart-active {
+.cart.-active {
   display: block;
 }
 
@@ -8,40 +8,42 @@
   top: 90px;
   right: 20px;
   background-color: #f0f0f0;
-  width: 400px;
+  width: 300px;
   min-height: 200px;
-  padding: 20px 0 0;
+  padding-left: 15px;
 }
 .itens {
   max-height: 300px;
   overflow-y: scroll;
 }
 .item-cart {
+  padding-top: 20px;
   position: relative;
+  display: flex;
+  
 }
 .itens a {
   display: flex;
   align-items: center;
   color: initial;
 }
-.cart-images {
+.item-image {
   padding: 10px;
   text-align: center;
-  width: 100%;
-}
-.cart-images img {
-  width: 90%;
+  width: 40%;
+  height: 30%;
 }
 
 .item-info {
   display: flex;
   flex-direction: column;
+  font-size: 12px;
 }
 .item-name span {
   display: block;
   max-width: 100%;
-  height: 45px;
   overflow: hidden;
+
 }
 
 .caixa-price-qtd {

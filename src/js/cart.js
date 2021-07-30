@@ -38,16 +38,16 @@ const newProduct = (image, name, quantity, bestPriceFormated) => {
   NewProductDescription.classList.add('item-name')
   NewProductDescription.innerHTML = name;
 
-  const createAmountWrapper = document.createElement('div');
-  createAmountWrapper.classList.add('caixa-price-qtd');
+  const NewAmountWrapper = document.createElement('div');
+  NewAmountWrapper.classList.add('caixa-price-qtd');
 
   const NewProductAmount = document.createElement('p')
   NewProductAmount.classList.add('item-qtd');
   NewProductAmount.innerHTML = 'Qtd.: ';
 
-  const createSpanAmount = document.createElement('span');
-  createSpanAmount.classList.add('amount');
-  createSpanAmount.innerHTML = quantity
+  const newSpanAmount = document.createElement('span');
+  newSpanAmount.classList.add('amount');
+  newSpanAmount.innerHTML = quantity
 
   const NewProductPrice = document.createElement('p');
   NewProductPrice.classList.add('item-price');
@@ -57,9 +57,10 @@ const newProduct = (image, name, quantity, bestPriceFormated) => {
   NewProductCart.insertAdjacentElement('beforeend', NewProductImage);
   NewProductCart.insertAdjacentElement('beforeend', NewWrapper);
   NewWrapper.insertAdjacentElement('beforeend', NewProductDescription);
-  NewWrapper.insertAdjacentElement('beforeend', NewProductAmount);
-  NewProductAmount.insertAdjacentElement('beforeend', createSpanAmount);
-  NewWrapper.insertAdjacentElement('beforeend', NewProductPrice);
+  NewWrapper.insertAdjacentElement('beforeend', NewAmountWrapper);
+  NewAmountWrapper.insertAdjacentElement('beforeend', NewProductAmount);
+  NewProductAmount.insertAdjacentElement('beforeend', newSpanAmount);
+  NewAmountWrapper.insertAdjacentElement('beforeend', NewProductPrice);
 }
 
 
