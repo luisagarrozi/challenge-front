@@ -1,9 +1,8 @@
-![Tela](https://github.com/luisagarrozi/challenge-front/blob/master/tela.png?raw=true)
-
 # E-Plus Frontend Challenge
 
 Interface criada para um desafio em front-end, consumindo um json para exibir os produtos no carrinho de compras.
 
+![Tela](https://github.com/luisagarrozi/challenge-front/blob/master/tela.png?raw=true)
 ## Tecnologias Utilizadas
 
 Para melhor exibir as habilidades em front-end, foi utilizado somente HTML, CSS e JavaScript puro.
