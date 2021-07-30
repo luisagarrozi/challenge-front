@@ -1,8 +1,7 @@
-
 .hamburger-menu {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   position: absolute;
   cursor: pointer;
   padding: 0;
@@ -28,7 +27,7 @@
   align-items: center;
   position: absolute;
   box-shadow: none;
-  justify-content: space-around;
+  justify-content: space-evenly;
   background-color: transparent;
   background: #fff;
 }
@@ -42,7 +41,7 @@
 .navbar.-active {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
   font-size: 15px;
   list-style: none;
 }
@@ -53,11 +52,17 @@
   cursor: pointer;
 }
 
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
 @media (min-width: 998px) {
   .header {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding: 5px;
     box-shadow: 0 5px 5px #eeeeee;
   }
@@ -68,7 +73,7 @@
     display: flex;
     background-color: #fff;
     width: 100%;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding: 0;
     flex-direction: row;
     position: static;
@@ -84,22 +89,30 @@
   .navbar {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     font-size: 15px;
     list-style: none;
-
+    width: 60%;
   }
   .navbar a {
     color: #000;
     text-decoration: none;
     cursor: pointer;
   }
+  .icons {
+    width: 20%;
+  }
+
+  .material-icons {
+    font-size: 40px;
+    cursor: pointer;
+  }
 }
 
 @media (min-width: 1280px) {
-    .header {
-      max-width: 1280px;
-      position: relative;
-      margin: 0 auto;
-    }
+  .header {
+    max-width: 1280px;
+    position: relative;
+    margin: 0 auto;
   }
+}

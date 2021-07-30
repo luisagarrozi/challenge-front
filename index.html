@@ -7,7 +7,7 @@
     <link rel="icon" href=".src/images/logo/favicon.png" />
     <link rel="stylesheet" href="./src/styles/navbar.css" />
     <link rel="stylesheet" href="./src/styles/body.css" />
-    <!-- importar css -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
     <title>Eplus</title>
   </head>
   <body>
@@ -24,14 +24,27 @@
           alt="Logo da agência ePlus"
         />
         <nav class="navbar">
-          <li class="navbar-item"><a href="#">Lorem Ipsum</a></li>
-          <li class="navbar-item"><a href="#">Lorem Ipsum</a></li>
-          <li class="navbar-item"><a href="#">Lorem Ipsum</a></li>
-          <li class="navbar-item"><a href="#">Lorem Ipsum</a></li>
-          <li class="navbar-item"><a href="#">Lorem Ipsum</a></li>
+          <li class="navbar-item"><a href="#">Lorem ipsum</a></li>
+          <li class="navbar-item"><a href="#">Lorem ipsum</a></li>
+          <li class="navbar-item"><a href="#">Lorem ipsum</a></li>
+          <li class="navbar-item"><a href="#">Lorem ipsum</a></li>
+          <li class="navbar-item"><a href="#">Lorem ipsum</a></li>
         </nav>
+        <div class="icons">
+          <span class="material-icons">search</span>
+          <span class="material-icons">person</span>
+          <span class="material-icons show-cart">shopping_cart</span>
+        </div>
       </section>
     </header>
+      <div class="cart">
+        <div class="itens"></div>
+        <div class="itens-total">
+          <span>Total do pedido: <strong class="valor-total"></strong></span>
+        </div>
+        <button class="checkout">FINALIZAR COMPRA</button>
+      </div>
     <script src="./src/js/hamburger.js"></script>
+    <script src="./src/js/cart.js"></script>
   </body>
 </html>
